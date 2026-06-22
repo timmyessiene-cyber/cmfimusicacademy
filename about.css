@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Unbounded:wght@200..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --primary: rgb(37, 150, 255);
+  --primary-light: rgba(37, 150, 255, 0.3);
+  --text: black;
+  --text-light: rgb(116, 116, 116);
+  --border: rgb(229, 229, 229);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: min(2560px, 100%);
+  gap: 50px;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header h3 {
+  font-family: unbounded;
+  color: var(--primary);
+}
+
+header select {
+  border: none;
+  font-family: Instrument sans;
+  font-size: 16px;
+  font-weight: 500px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-family: Instrument sans;
+  font-weight: 500;
+  border-radius: 7px;
+  background-color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-family: Instrument sans;
+  font-weight: 500;
+  border-radius: 7px;
+  background-color: var(--primary);
+  width: fit-content;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: unbounded;
+}
+
+h1 {
+  font-size: 40px;
+  color: var(--primary);
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-family: instrument sans;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+section {
+  width: min(1440px, 100%);
+}
+
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.section-1 h1 {
+  color: var(--primary);
+}
+
+.section-1,
+p {
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+.section-1 div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: min(600px, 100%);
+}
+
+.section-1 img {
+  width: min(580px, 100%);
+  height: 620px;
+  border-radius: 10px;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 40px;
+  gap: 100px;
+  /* height: fit-content; */
+}
+
+.section-2 h1 {
+  text-align: center;
+}
+
+.section-2>div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 50px;
+  column-gap: 50px;
+}
+
+.trainer {
+  border: 2px solid var(--border);
+  padding: 40px;
+  border-radius: 5px;
+  gap: 30px;
+}
+
+.trainer h4 {
+  font-family: Instrument sans;
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px;
+}
+
+.modules {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.module {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 2px solid var(--border);
+  padding: 10px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.module>p {
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+.module div {
+  padding: 10px;
+  background-color: var(--primary-light);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.module h6 {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 620px;
+  padding: 40px;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0.3, 0.3, 0.3, 0.45), rgba(0.3, 0.3, 0.3, 0.45)), url(./assets/483675064_949570594055667_8033917978646739023_n-YrDJGW5pL5IVyQJe.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -180px;
+}
+
+.section-4 div {
+  display: flex;
+  padding: 40px;
+  width: 650px;
+  border: 2px solid white;
+  border-radius: 7px;
+}
+
+.section-4 h2 {
+  color: white;
+}
+
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+}
+
+.tarif-test {
+  display: flex;
+  /* height: fit-content; */
+  gap: 50px;
+}
+
+.tarifs {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 30px;
+  flex: 1;
+}
+
+.tarifs li {
+  font-family: instrument sans;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.tarifs ul {
+  list-style-position: inside;
+}
+
+.tests {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tests h4 {
+  font-family: instrument sans;
+  font-weight: 600;
+}
+
+.tests p {
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  padding: 40px;
+  /* gap: auto; */
+  justify-content: space-between;
+  border: 2px solid var(--border);
+  border-radius: 7px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 50px;
+  color: white;
+  background-color: var(--primary);
+}
+
+footer h1 {
+  font-size: 128px;
+  color: white;
+  line-height: 140px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer svg {
+  fill: white;
+  width: 36px;
+  height: 36px;
+}
+
+.infos {
+  display: flex;
+  /* text-align: right; */
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 50px;
+}
+
+.info>div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+
+.docs {
+  display: flex;
+  justify-content: space-between;
+}
