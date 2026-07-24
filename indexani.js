@@ -25,9 +25,3 @@ tl.from(".s1d-1", {
   y: 20,
   duration: 0.7,
 });
-
-tl.from(".s1d-2", {
-  opacity: 0,
-  y: 20,
-  duration: 0.7,
-})
